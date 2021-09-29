@@ -1,0 +1,14 @@
+attrs==21.2.0
+autopep8==1.5.7
+debugpy==1.4.3 
+fake-bpy-module-2.93==20210701
+flake8==3.9.2
+flake8-mypy==17.8.0
+mccabe==0.6.1
+mypy==0.910
+mypy-extensions==0.4.3
+numpy==1.21.2
+pycodestyle==2.7.0
+pyflakes==2.3.1
+toml==0.10.2
+typing-extensions==3.10.0.2
