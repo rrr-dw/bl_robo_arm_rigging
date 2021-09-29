@@ -28,7 +28,7 @@ class RBA_OP_ik_sl(bpy.types.Operator):
 		if sc==None:
 			return False
 
-		return True
+		return len(sc.joints)>1 and sc.has_driver(bpy.context.object)
 
 	def execute(self, context:Context):
 		if self.control_key in bpy.data.objects:

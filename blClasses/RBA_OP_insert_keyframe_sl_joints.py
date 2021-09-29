@@ -17,12 +17,7 @@ class RBA_OP_insert_keyframe_sl_joints(bpy.types.Operator):
 		if sc==None:
 			return False
 
-		keys = bpy.context.object.keys()
-		for i in range(len(sc.joints)):
-			if f"q{i}" not in keys:
-				return False
-
-		return True
+		return sc.has_driver(bpy.context.object)
 
 	def execute(self, context:Context):
 		sc = SerialChain.create_from_base_empty(bpy.context.object)

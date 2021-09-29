@@ -89,6 +89,13 @@ class SerialChain:
 
 		return res
 
+	def has_driver(self,obj:Object):
+		keys = obj.keys()
+		for i in range(len(self.joints)):
+			if f"q{i}" not in keys:
+				return False
+		return True
+
 	def dM_dpi(self,i:int)->Matrix:
 		return self.dM_dqi(i) * self.joints[i].dq_dp
 
