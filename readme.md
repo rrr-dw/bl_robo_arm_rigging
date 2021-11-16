@@ -11,7 +11,7 @@ It construct serial links(a kind of robotic arms) from DH parameters using only 
 
 This addon push one entry group to the add menu: **Serial Link**. **Serial Link** helps generating rigging of a serial link with dedicated UI and presets.
 
-Presets include SCARA, Stanford Arm, Cartesian Coordinate (PPP), Cylindrical Coordinate (RPPR), Spherical Coordinate (RRR) and Spherical Coordinate (RRP). You can modify a serial link that generated in this menu with **Modify Active Serial Link** entry once the base of the serial link is active.
+Presets include SCARA, Stanford Arm, Cartesian Coordinate (PPP), Cylindrical Coordinate (RPPR), Spherical Coordinate (RRR) and Spherical Coordinate (RRP). You can modify a serial link generated in this menu with **Modify Active Serial Link** entry once the base of the serial link is active.
 
 # Serial Link
 
@@ -33,7 +33,7 @@ If **Generate driver for joint varibles** is checked, driver for joint variables
 ![IK](doc/imgs/ik.gif)
 
 I recommand using blender's native IK if that can solve your problem.
-This feature isn't complete, heavy, and sometimes failed to reach goal even if the goal is reachable. The only advantage of this feature over the native one that I can think of is that, this feature repects prismatic joint's constraint. As far as I know, the closest way to introduce prismatic joint's constraint in native IK is that, restricting two virtual revolute joints and compose one real prismatic joint by connecting the two former virtual joints. This method also introduces redundant revolute joints that jump in both ends of the prismatic joint, and doesn't provide direct manipulation for parameters of the prismatic joint. I'm sure you can make this behavior looks intentional once your creativity is in charge. However if you've already given a concrete image of what you should create, only then, you may use this feature.
+This feature is incomplete, heavy. It sometimes fail to reach goal even if the goal is reachable. The only advantage of this feature over the native one that I can think of is that, this feature repects prismatic joint's constraint. As far as I know, the closest way to introduce prismatic joint's constraint in native IK is that, restricting two virtual revolute joints and compose one real prismatic joint by connecting the two former virtual joints. This method also introduces redundant revolute joints that jump in both ends of the prismatic joint, and doesn't provide direct manipulation for parameters of the prismatic joint. I'm sure you can make this behavior looks intentional once your creativity is in charge. However if you've already given a concrete image of what you should create, only then, you may use this feature.
 
 # About
 This project is a running project that will be improved as I learn more about robotics. Although it isn't my top priority, I've always been interested in this topic. I'm planning to write scripts about what I learn to consolidate my understanding, and this project will be an archive for the scripts.
